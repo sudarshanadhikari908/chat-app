@@ -1,13 +1,15 @@
 // src/appRoutes.tsx
-import { Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Login from './pages/login';
 
 
 const AppRoutes = () => {
     return (
-        <Routes>
-            <Route path="/" element={<Login />} />
-        </Routes>
+        <Router>
+            <Routes>
+                <Route path="/" element={<Login />} />
+            </Routes>
+        </Router>
     );
 };
 
